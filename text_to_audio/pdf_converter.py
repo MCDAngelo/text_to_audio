@@ -9,6 +9,7 @@ class PDFConverter:
         self.pages = self.reader.pages
         self.extract_all_text()
         self.clean_text()
+        self.cleaned_text = " ".join(self.clean_pages)
 
     def extract_all_text(self):
         self.raw_text = [page.extract_text() for page in self.pages]
