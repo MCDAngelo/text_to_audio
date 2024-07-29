@@ -7,6 +7,8 @@ class PDFConverter:
     def __init__(self, filename):
         self.reader = PdfReader(filename)
         self.pages = self.reader.pages
+        self.extract_all_text()
+        self.clean_text()
 
     def extract_all_text(self):
         self.raw_text = [page.extract_text() for page in self.pages]
