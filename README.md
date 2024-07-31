@@ -12,5 +12,18 @@ would be interesting to explore the approach outlined by
 , which was implemented in python [here](https://medium.com/@hussainshahbazkhawaja/paper-implementation-header-and-footer-extraction-by-page-association-3a499b2552ae).
 Or, alternatively, use DBSCAN to cluster the text to identify headers/footers outlined in [this comment](https://github.com/pymupdf/PyMuPDF/discussions/2259#discussioncomment-6669190).
 
+## Usage
+
+Use poetry to run the script. 
+```sh
+poetry run python main.py
+```
+
+You'll then be prompted to provide a path to the PDF file, and output filename.
+
+```
+Filepath for PDF you wish to convert:
+Filepath for mp3 output. If blank, will use original filepath []:
+```
 
 
