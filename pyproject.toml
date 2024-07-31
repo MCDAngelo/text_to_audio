@@ -10,6 +10,7 @@ python = "^3.12"
 pypdf = "^4.3.1"
 ipython = "^8.26.0"
 google-cloud-texttospeech = "^2.16.4"
+click = "^8.1.7"
 
 
 [build-system]
